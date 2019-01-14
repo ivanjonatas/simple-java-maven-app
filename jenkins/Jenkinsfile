@@ -28,4 +28,11 @@ pipeline {
             }
         }
     }
+        post {
+        failure {
+            mail to: 'jonatasilva22@hotmail.com',
+                 subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
+                 body: "Something is wrong with ${env.BUILD_URL}"
+        }
+    }
 }
