@@ -1,4 +1,4 @@
 version: '2'
 services:
-  projetogit2:
+  projetohost:
     image: nginx
