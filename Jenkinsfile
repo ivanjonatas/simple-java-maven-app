@@ -6,4 +6,7 @@ node('master'){
     stage('comand'){
         sh "ls"
     }
+    stage ('github'){
+        sh "integração feita com sucesso"
+    }
 }
